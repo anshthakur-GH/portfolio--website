@@ -20,7 +20,7 @@ const AboutSection = () => {
             <div className="lg:col-span-2">
               <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-xai-blue/20 to-xai-purple/20 p-1">
                 <img 
-                  src="/lovable-uploads/c6424705-7da7-451d-bbab-2f6717cb93f8.png" 
+                  src="/images/about-me.jpg" 
                   alt="Ansh at Startup Mahakumbh" 
                   className="absolute inset-0 w-full h-full object-cover rounded-xl"
                 />
