@@ -30,8 +30,7 @@ const HeroSection = () => {
             ref={titleRef} 
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0"
           >
-            Hi, I'm <span className="text-gradient">ANSH THAKUR</span> — <br />
-            <span className="text-gradient">UNFAZED</span>
+            Hi, I'm <span className="text-gradient">ANSH THAKUR</span><br />
           </h1>
           
           <p 

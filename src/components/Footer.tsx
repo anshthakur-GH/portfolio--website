@@ -17,7 +17,6 @@ const Footer = () => {
               Building a future of freedom, wealth, and impact through entrepreneurship and self-improvement.
             </p>
           </div>
-          
           <div className="flex flex-col items-center space-y-6">
             <div className="flex space-x-6">
               <a href="https://x.com/inspirefy_daily" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
