@@ -48,7 +48,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="section-padding -mt-16 bg-xai-black">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 pb-12">
         <div ref={ref} className={`max-w-6xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">My Projects</h2>

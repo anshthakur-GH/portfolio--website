@@ -19,12 +19,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center pt-24 pb-20 overflow-hidden">
+    <section className="relative min-h-[70vh] flex flex-col justify-center pt-12 pb-8 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-xai-black z-[-2]"></div>
       <div className="absolute top-[-50%] left-[-20%] w-[70%] h-[70%] rounded-full bg-xai-blue/10 blur-[120px] z-[-1]"></div>
       <div className="absolute bottom-[-30%] right-[-10%] w-[60%] h-[60%] rounded-full bg-xai-purple/10 blur-[100px] z-[-1]"></div>
       
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 
             ref={titleRef} 

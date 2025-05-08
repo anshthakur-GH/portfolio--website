@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Youtube, Instagram } from 'lucide-react';
@@ -11,7 +10,7 @@ const InspirefySection = () => {
 
   return (
     <section className="section-padding -mt-24 bg-gradient-to-br from-xai-darkgray/80 to-xai-gray/50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 pb-12">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-16">
           My Brand - Inspirefy
         </h2>

@@ -30,7 +30,7 @@ const Navbar = () => {
             to="/#"
             className="text-2xl font-bold tracking-tighter text-white"
           >
-            ANSH THAKUR<span className="text-xai-blue">.</span>
+            ANSH THAKUR<span className="text-xai-blue"></span>
           </HashLink>
 
           {/* Desktop Menu */}

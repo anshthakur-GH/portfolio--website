@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center">
           <div className="mb-6">
             <a href="/" className="text-2xl font-bold tracking-tighter text-white">
-              ANSH THAKUR<span className="text-xai-blue">.</span>
+              ANSH THAKUR<span className="text-xai-blue"></span>
             </a>
             <p className="text-gray-400 mt-2 max-w-md mx-auto">
               Building a future of freedom, wealth, and impact through entrepreneurship and self-improvement.
