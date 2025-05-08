@@ -14,8 +14,8 @@ const AboutSection = () => {
         <div ref={sectionRef} className={`max-w-5xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-              <span className="text-gradient font-bold">Driven by Ambition</span> &<br />
-              <span className="text-gradient font-bold">Inspired by Excellence</span>
+              Driven by Ambition &<br />
+              Inspired by Excellence
             </h2>
           </div>
 
