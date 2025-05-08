@@ -34,8 +34,7 @@ const AboutSection = () => {
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
               I'm an <span className="text-gradient">AI-driven developer</span> and <span className="text-gradient">AI Automation Developer</span> pursuing a B.Tech in Artificial Intelligence, crafting innovative AI projects that push boundaries. As a skilled <span className="text-gradient">Shopify Developer</span>, I've built stunning, high-impact e-commerce websites for brands, blending creativity with functionality.
 
-I'm also the founder of <span className="text-gradient">UNFAZED</span>, a brand dedicated to fearless innovation and empowerment. Through my Instagram and YouTube channels under Inspirefy, I've inspired over 
-<span className="text-gradient">500,000</span> viewers with content that sparks motivation and showcases tech-driven solutions.
+I'm also the founder of <span className="text-gradient">UNFAZED</span>, a brand dedicated to fearless innovation and empowerment. Through my Instagram and YouTube channels under Inspirefy, I've inspired over  <span className="text-gradient"> 500,000</span> viewers with content that sparks motivation and showcases tech-driven solutions.
               </p>
 
               <div className="grid grid-cols-2 gap-4 md:gap-6">
