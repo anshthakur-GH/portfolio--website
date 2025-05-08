@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import { Github, Link as LinkIcon, Youtube, Instagram } from 'lucide-react';
 
 const ProjectsSection = () => {
   const { ref, inView } = useInView({
@@ -9,40 +10,68 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "SOCIAL MEDIA POST AUTOMATOR",
+      title: "Social Media Automator",
       description: "Automated tool for scheduling and publishing content across multiple social platforms to maximize engagement.",
       tags: ["Automation", "Social Media"],
       color: "bg-gradient-to-br from-blue-600/20 to-cyan-600/20 border-blue-500/30",
+      github: "https://github.com/anshthakur-GH/Social-Media-Automator",
     },
     {
-      title: "CRUMPTS - AI VOICE DICTATION TOOL",
+      title: "CRUMPTS - Voice Dictation",
       description: "Advanced voice recognition tool leveraging AI for efficient text transcription and editing.",
       tags: ["AI", "Voice Recognition"],
       color: "bg-gradient-to-br from-purple-600/20 to-pink-600/20 border-purple-500/30",
+      github: "https://github.com/anshthakur-GH/CRUMPTS-Voice-Dictation",
     },
     {
-      title: "ECHOVERSE",
+      title: "EchoVerse",
       description: "AI model designed to recreate human memories through advanced machine learning algorithms.",
       tags: ["AI", "Memory Recreation"],
       color: "bg-gradient-to-br from-emerald-600/20 to-green-600/20 border-emerald-500/30",
+      github: "https://github.com/anshthakur-GH/Project-EchoVerse",
+    },
+    {
+      title: "Outlier AI Dashboard",
+      description: "Frontend clone of Outlier AI's homepage with a custom Dashboard for the Level Up Vibe Coding Hackathon 2025.",
+      tags: ["HTML", "CSS", "JavaScript", "Chart.js"],
+      color: "bg-gradient-to-br from-fuchsia-600/20 to-blue-600/20 border-fuchsia-500/30",
+      github: "https://github.com/anshthakur-GH/OutlierAi--Dashboard",
+    },
+    {
+      title: "Inventory Management System",
+      description: "A basic, beginner-friendly Inventory Management System built with Node.js, Express, MySQL, and EJS.",
+      tags: ["Node.js", "Express", "MySQL", "EJS"],
+      color: "bg-gradient-to-br from-green-600/20 to-lime-600/20 border-green-500/30",
+      github: "https://github.com/anshthakur-GH/Final-Call--IMS",
     },
     {
       title: "Inspirefy",
       description: "A motivational Instagram and YouTube brand focused on daily self-growth content.",
       tags: ["Content Creation", "Personal Growth"],
       color: "bg-gradient-to-br from-red-600/20 to-orange-600/20 border-red-500/30",
+      instagram: "https://www.instagram.com/inspirefy_daily/reels/",
+      youtube: "https://www.youtube.com/channel/UCmpLoVe7Nc_uyQn5-CZNKMg/",
     },
     {
-      title: "7C Signature Scents",
+      title: "7C SignatureScents.com",
       description: "Designed and developed a Shopify store for a premium perfume brand with custom features.",
       tags: ["E-commerce", "Shopify"],
       color: "bg-gradient-to-br from-amber-600/20 to-yellow-600/20 border-amber-500/30",
+      link: "https://7csignaturescents.com/",
     },
     {
-      title: "SUPERIORBASICS.COM",
+      title: "SuperiorBasics.com",
       description: "E-commerce platform with minimalist design focusing on essential, high-quality products.",
       tags: ["Web Development", "E-commerce"],
       color: "bg-gradient-to-br from-sky-600/20 to-indigo-600/20 border-sky-500/30",
+      link: "https://superiorbasics.com/",
+    },
+    {
+      title: "Chatkhat.com",
+      description: "Developed a Shopify store for a pickles business, focusing on e-commerce and user experience.",
+      tags: ["Shopify", "E-commerce", "Web Development"],
+      color: "bg-gradient-to-br from-yellow-600/20 to-orange-600/20 border-yellow-500/30",
+      link: "https://chatkhat.com/",
     },
   ];
 
@@ -57,30 +86,55 @@ const ProjectsSection = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div 
-                key={index}
-                className={`rounded-2xl p-6 border ${project.color} card-hover group relative overflow-hidden`}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-xai-blue/30 to-xai-purple/30 opacity-0 group-hover:opacity-30 transition-opacity z-0"></div>
-                
-                <div className="relative z-10">
-                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span 
-                        key={tagIndex}
-                        className="px-3 py-1 bg-white/10 rounded-full text-xs font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+            {projects.map((project, index) => {
+              const useLinkIcon = ["7C SignatureScents.com", "SuperiorBasics.com", "Inspirefy"].includes(project.title);
+              return (
+                <div 
+                  key={index}
+                  className={`rounded-2xl p-6 border ${project.color} card-hover group relative overflow-hidden flex flex-col justify-between`}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-xai-blue/30 to-xai-purple/30 opacity-0 group-hover:opacity-30 transition-opacity z-0"></div>
+                  <div className="relative z-10 flex-1 flex flex-col">
+                    <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                    <p className="text-gray-400 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mt-auto mb-4">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span 
+                          key={tagIndex}
+                          className="px-3 py-1 bg-white/10 rounded-full text-xs font-medium"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="w-full flex justify-center mt-2 gap-4">
+                      {project.github ? (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                        </a>
+                      ) : project.instagram && project.youtube ? (
+                        <>
+                          <a href={project.youtube} target="_blank" rel="noopener noreferrer">
+                            <Youtube className="w-7 h-7 text-gray-400 hover:text-red-500 transition-colors" />
+                          </a>
+                          <a href={project.instagram} target="_blank" rel="noopener noreferrer">
+                            <Instagram className="w-7 h-7 text-gray-400 hover:text-pink-500 transition-colors" />
+                          </a>
+                        </>
+                      ) : project.link ? (
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          <LinkIcon className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                        </a>
+                      ) : useLinkIcon ? (
+                        <LinkIcon className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                      ) : (
+                        <Github className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
