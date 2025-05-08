@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Youtube, Instagram } from 'lucide-react';
+import { Youtube, Instagram, X as XIcon } from 'lucide-react';
 
 const InspirefySection = () => {
   const { ref, inView } = useInView({
@@ -41,10 +41,20 @@ const InspirefySection = () => {
                   <Instagram className="w-12 h-12 text-white" />
                 </div>
               </a>
+              <a 
+                href="https://x.com/inspirefy_daily"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group transform hover:scale-110 transition-all duration-300"
+              >
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-gray-800 to-gray-600 flex items-center justify-center hover:shadow-lg hover:shadow-gray-500/30 transition-all duration-300">
+                  <XIcon className="w-12 h-12 text-white" />
+                </div>
+              </a>
             </div>
 
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto text-center">
-              Achieved over 500,000+ views across platforms with an authentic and engaged following in just 4 months
+              Achieved over 100,000+ views across platforms with an authentic and engaged following in just 4 months
             </p>
           </div>
         </div>
