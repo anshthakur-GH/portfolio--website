@@ -44,7 +44,7 @@ const InspirefySection = () => {
             </div>
 
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto text-center">
-              Achieved over 100,000+ views across platforms with an authentic and engaged following in just 4 months
+              Achieved over 500,000+ views across platforms with an authentic and engaged following in just 4 months
             </p>
           </div>
         </div>
