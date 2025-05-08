@@ -13,7 +13,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-8 pb-12">
         <div ref={sectionRef} className={`max-w-5xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Driven by Ambition &<br />Inspired by Excellence</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
+              <span className="text-gradient font-bold">Driven by Ambition</span> &<br />
+              <span className="text-gradient font-bold">Inspired by Excellence</span>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
@@ -29,11 +32,10 @@ const AboutSection = () => {
 
             <div className="lg:col-span-3 flex flex-col justify-center">
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                I'm currently pursuing B.Tech in Computer Science (AI specialization) and working on cutting-edge AI projects.
-                I'm also building my personal brand called 'INSPIREFY,' focused on inspiring and empowering individuals through innovation and motivation.
-              </p>
-              <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                Passionate about merging technology with real-world impact.
+              I'm an <span className="text-gradient">AI-driven developer</span> and <span className="text-gradient">AI Automation Developer</span> pursuing a B.Tech in Artificial Intelligence, crafting innovative AI projects that push boundaries. As a skilled <span className="text-gradient">Shopify Developer</span>, I've built stunning, high-impact e-commerce websites for brands, blending creativity with functionality.
+
+I'm also the founder of <span className="text-gradient">UNFAZED</span>, a brand dedicated to fearless innovation and empowerment. Through my Instagram and YouTube channels under Inspirefy, I've inspired over 
+<span className="text-gradient">500,000</span> viewers with content that sparks motivation and showcases tech-driven solutions.
               </p>
 
               <div className="grid grid-cols-2 gap-4 md:gap-6">
