@@ -17,6 +17,10 @@ const ServicesSection = () => {
       description: "Development of automated solutions powered by artificial intelligence.",
     },
     {
+      title: "AI Tools and Research",
+      description: "Cutting-edge AI research and tool development for specific needs.",
+    },
+    {
       title: "E-commerce Development",
       description: "Complete store setup and consultation for online businesses.",
     },
@@ -27,10 +31,6 @@ const ServicesSection = () => {
     {
       title: "Brand Building",
       description: "Comprehensive brand development and growth strategies.",
-    },
-    {
-      title: "AI Tools and Research",
-      description: "Cutting-edge AI research and tool development for specific needs.",
     },
   ];
 

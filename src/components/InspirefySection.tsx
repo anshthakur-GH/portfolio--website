@@ -12,7 +12,7 @@ const InspirefySection = () => {
     <section className="section-padding -mt-24 bg-gradient-to-br from-xai-darkgray/80 to-xai-gray/50">
       <div className="container mx-auto px-4 sm:px-8 pb-8 sm:pb-12">
         <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-8 sm:mb-16">
-          My Brand - Inspirefy
+          Social Media Page - Inspirefy
         </h2>
         
         <div 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Briefcase, Code, User, Image } from 'lucide-react';
+import { Briefcase, Code, User, Image, Brain, Search } from 'lucide-react';
 
 const SkillsSection = () => {
   const { ref, inView } = useInView({
@@ -11,12 +11,17 @@ const SkillsSection = () => {
   const skills = [
     {
       title: "AI Automation",
-      icon: <Code className="h-6 w-6" />,
+      icon: <Brain className="h-6 w-6" />,
       color: "from-blue-500 to-cyan-400",
     },
     {
-      title: "AI Development",
-      icon: <Code className="h-6 w-6" />,
+      title: "AI Tools and Research",
+      icon: <Search className="h-6 w-6" />,
+      color: "from-violet-600 to-indigo-600",
+    },
+    {
+      title: "AI DEV",
+      icon: <span className="inline-block font-bold text-xai-blue text-lg">AI</span>,
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -34,21 +39,6 @@ const SkillsSection = () => {
       icon: <Image className="h-6 w-6" />,
       color: "from-red-500 to-rose-400",
     },
-    {
-      title: "Brand Building",
-      icon: <User className="h-6 w-6" />,
-      color: "from-blue-500 to-indigo-500",
-    },
-    {
-      title: "Mindset Development",
-      icon: <User className="h-6 w-6" />,
-      color: "from-yellow-500 to-amber-400",
-    },
-    {
-      title: "AI Tools and Research",
-      icon: <Code className="h-6 w-6" />,
-      color: "from-violet-600 to-indigo-600",
-    },
   ];
 
   return (
@@ -62,7 +52,7 @@ const SkillsSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {skills.map((skill, index) => (
               <div
                 key={index}
