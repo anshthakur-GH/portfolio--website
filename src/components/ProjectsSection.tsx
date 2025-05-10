@@ -85,15 +85,21 @@ const ProjectsSection = () => {
               A showcase of my work and contributions across various domains
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             {projects.map((project, index) => {
               const useLinkIcon = ["7C SignatureScents.com", "SuperiorBasics.com", "Inspirefy"].includes(project.title);
+              // Determine main URL for the card
+              let mainUrl = project.github || project.link || project.youtube || project.instagram || '#';
               return (
-                <div 
+                <a
                   key={project.title}
+                  href={mainUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`rounded-2xl p-3 md:p-6 border ${project.color} card-hover group relative overflow-hidden flex flex-col justify-between`}
+                  tabIndex={0}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-xai-blue/30 to-xai-purple/30 opacity-0 group-hover:opacity-30 transition-opacity z-0"></div>
+                  <div className="absolute inset-px bg-gradient-to-br from-xai-blue/30 to-xai-purple/30 opacity-0 group-hover:opacity-30 transition-opacity z-0"></div>
                   <div className="relative z-10 flex-1 flex flex-col">
                     <h3 className="text-xs md:text-xl font-bold mb-2 md:mb-3">{project.title}</h3>
                     <p className="text-gray-400 text-xs md:text-base mb-2 md:mb-4">{project.description}</p>
@@ -109,20 +115,20 @@ const ProjectsSection = () => {
                     </div>
                     <div className="w-full flex justify-center mt-2 gap-2 md:gap-4">
                       {project.github ? (
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
                           <Github className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-white transition-colors" />
                         </a>
                       ) : project.instagram && project.youtube ? (
                         <>
-                          <a href={project.youtube} target="_blank" rel="noopener noreferrer">
+                          <a href={project.youtube} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
                             <Youtube className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-red-500 transition-colors" />
                           </a>
-                          <a href={project.instagram} target="_blank" rel="noopener noreferrer">
+                          <a href={project.instagram} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
                             <Instagram className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-pink-500 transition-colors" />
                           </a>
                         </>
                       ) : project.link ? (
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
                           <LinkIcon className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-white transition-colors" />
                         </a>
                       ) : useLinkIcon ? (
@@ -132,7 +138,7 @@ const ProjectsSection = () => {
                       )}
                     </div>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
