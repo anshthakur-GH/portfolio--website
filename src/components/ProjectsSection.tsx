@@ -85,50 +85,50 @@ const ProjectsSection = () => {
               A showcase of my work and contributions across various domains
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-8">
             {projects.map((project, index) => {
               const useLinkIcon = ["7C SignatureScents.com", "SuperiorBasics.com", "Inspirefy"].includes(project.title);
               return (
                 <div 
-                  key={index}
-                  className={`rounded-2xl p-6 border ${project.color} card-hover group relative overflow-hidden flex flex-col justify-between`}
+                  key={project.title}
+                  className={`rounded-2xl p-3 md:p-6 border ${project.color} card-hover group relative overflow-hidden flex flex-col justify-between`}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-xai-blue/30 to-xai-purple/30 opacity-0 group-hover:opacity-30 transition-opacity z-0"></div>
                   <div className="relative z-10 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                    <p className="text-gray-400 mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-auto mb-4">
+                    <h3 className="text-xs md:text-xl font-bold mb-2 md:mb-3">{project.title}</h3>
+                    <p className="text-gray-400 text-xs md:text-base mb-2 md:mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-1 md:gap-2 mt-auto mb-2 md:mb-4">
                       {project.tags.map((tag, tagIndex) => (
                         <span 
                           key={tagIndex}
-                          className="px-3 py-1 bg-white/10 rounded-full text-xs font-medium"
+                          className="px-2 py-0.5 md:px-3 md:py-1 bg-white/10 rounded-full text-[10px] md:text-xs font-medium"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
-                    <div className="w-full flex justify-center mt-2 gap-4">
+                    <div className="w-full flex justify-center mt-2 gap-2 md:gap-4">
                       {project.github ? (
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                          <Github className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
                         </a>
                       ) : project.instagram && project.youtube ? (
                         <>
                           <a href={project.youtube} target="_blank" rel="noopener noreferrer">
-                            <Youtube className="w-7 h-7 text-gray-400 hover:text-red-500 transition-colors" />
+                            <Youtube className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-red-500 transition-colors" />
                           </a>
                           <a href={project.instagram} target="_blank" rel="noopener noreferrer">
-                            <Instagram className="w-7 h-7 text-gray-400 hover:text-pink-500 transition-colors" />
+                            <Instagram className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-pink-500 transition-colors" />
                           </a>
                         </>
                       ) : project.link ? (
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                          <LinkIcon className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                          <LinkIcon className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
                         </a>
                       ) : useLinkIcon ? (
-                        <LinkIcon className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                        <LinkIcon className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
                       ) : (
-                        <Github className="w-7 h-7 text-gray-400 hover:text-white transition-colors" />
+                        <Github className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
                       )}
                     </div>
                   </div>

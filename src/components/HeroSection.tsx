@@ -42,12 +42,12 @@ const HeroSection = () => {
           
           <div 
             ref={ctaRef}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0"
+            className="flex flex-row items-center justify-center gap-2 sm:gap-4 opacity-0"
           >
             <HashLink 
               to="#projects"
               smooth
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-lg"
+              className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-base sm:text-lg min-w-[80px] text-center"
             >
               Projects
             </HashLink>
@@ -55,7 +55,7 @@ const HeroSection = () => {
               href="https://drive.google.com/file/d/1d3jplTcNsRUSOtlnS8S-k51PGllmqb_v/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-lg"
+              className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-base sm:text-lg min-w-[80px] text-center"
             >
               Resume
             </a>

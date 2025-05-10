@@ -45,17 +45,17 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="relative bg-xai-black border border-white/10 rounded-2xl p-8 h-full card-hover"
+                className="relative bg-xai-black border border-white/10 rounded-2xl p-3 md:p-8 h-full card-hover"
               >
-                <span className="absolute -top-4 -left-4 bg-gradient-to-r from-xai-blue to-xai-purple text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center">
+                <span className="absolute -top-2 -left-2 bg-gradient-to-r from-xai-blue to-xai-purple text-white text-xs font-bold rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center">
                   {index + 1}
                 </span>
-                <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-                <p className="text-gray-400">{service.description}</p>
+                <h3 className="text-xs md:text-xl font-bold mb-2 md:mb-4">{service.title}</h3>
+                <p className="text-gray-400 text-xs md:text-base">{service.description}</p>
               </div>
             ))}
           </div>

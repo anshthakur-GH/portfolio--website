@@ -62,16 +62,16 @@ const SkillsSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="relative border border-white/10 rounded-xl overflow-hidden bg-xai-darkgray p-6 hover:border-white/30 transition-all card-hover"
+                className="relative border border-white/10 rounded-xl overflow-hidden bg-xai-darkgray p-3 sm:p-6 hover:border-white/30 transition-all card-hover"
               >
-                <div className={`absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br ${skill.color} rounded-full opacity-10 blur-lg`}></div>
+                <div className={`absolute -bottom-2 -right-2 w-12 h-12 sm:w-24 sm:h-24 bg-gradient-to-br ${skill.color} rounded-full opacity-10 blur-lg`}></div>
                 <div className="relative z-10">
-                  <div className="mb-4 text-xai-blue">{skill.icon}</div>
-                  <h3 className="text-lg font-bold mb-2">{skill.title}</h3>
+                  <div className="mb-2 sm:mb-4 text-xai-blue">{skill.icon}</div>
+                  <h3 className="text-xs sm:text-lg font-bold mb-1 sm:mb-2">{skill.title}</h3>
                 </div>
               </div>
             ))}
