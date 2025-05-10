@@ -39,7 +39,7 @@ const Navbar = () => {
               <HashLink
                 key={item}
                 to={`/#${item.toLowerCase()}`}
-                className="text-white hover:text-xai-blue transition-colors"
+                className="px-5 py-2 rounded-full bg-xai-black card-hover text-white hover:text-xai-blue transition-colors"
               >
                 {item}
               </HashLink>

@@ -85,7 +85,7 @@ const ProjectsSection = () => {
               A showcase of my work and contributions across various domains
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 overflow-hidden">
             {projects.map((project, index) => {
               const useLinkIcon = ["7C SignatureScents.com", "SuperiorBasics.com", "Inspirefy"].includes(project.title);
               return (
@@ -110,20 +110,20 @@ const ProjectsSection = () => {
                     <div className="w-full flex justify-center mt-2 gap-2 md:gap-4">
                       {project.github ? (
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
+                          <Github className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-white transition-colors" />
                         </a>
                       ) : project.instagram && project.youtube ? (
                         <>
                           <a href={project.youtube} target="_blank" rel="noopener noreferrer">
-                            <Youtube className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-red-500 transition-colors" />
+                            <Youtube className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-red-500 transition-colors" />
                           </a>
                           <a href={project.instagram} target="_blank" rel="noopener noreferrer">
-                            <Instagram className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-pink-500 transition-colors" />
+                            <Instagram className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-pink-500 transition-colors" />
                           </a>
                         </>
                       ) : project.link ? (
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                          <LinkIcon className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
+                          <LinkIcon className="w-1.5 h-1.5 md:w-3 md:h-3 text-gray-400 hover:text-white transition-colors" />
                         </a>
                       ) : useLinkIcon ? (
                         <LinkIcon className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
