@@ -20,15 +20,15 @@ const InspirefySection = () => {
           className={`max-w-5xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}
         >
           <div className="relative bg-xai-black border border-white/10 rounded-2xl p-4 sm:p-8 md:p-16">
-            <div className="flex flex-col sm:flex-row sm:justify-center items-center gap-4 sm:gap-0 sm:space-x-16 mb-6 sm:mb-8">
+            <div className="flex flex-row justify-center items-center space-x-8 sm:space-x-16 mb-6 sm:mb-8">
               <a 
                 href="https://www.youtube.com/channel/UCmpLoVe7Nc_uyQn5-CZNKMg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group transform hover:scale-110 transition-all duration-300"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300">
-                  <Youtube className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300">
+                  <Youtube className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </a>
               <a 
@@ -37,8 +37,8 @@ const InspirefySection = () => {
                 rel="noopener noreferrer"
                 className="group transform hover:scale-110 transition-all duration-300"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
-                  <Instagram className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+                  <Instagram className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </a>
               <a 
@@ -47,8 +47,8 @@ const InspirefySection = () => {
                 rel="noopener noreferrer"
                 className="group transform hover:scale-110 transition-all duration-300"
               >
-                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-gray-800 to-gray-600 flex items-center justify-center hover:shadow-lg hover:shadow-gray-500/30 transition-all duration-300">
-                  <XIcon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-gray-800 to-gray-600 flex items-center justify-center hover:shadow-lg hover:shadow-gray-500/30 transition-all duration-300">
+                  <XIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </a>
             </div>

@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[70vh] flex flex-col justify-center pt-12 pb-8 overflow-hidden">
+    <section className="relative min-h-[70vh] flex flex-col justify-center pt-8 pb-4 sm:pt-12 sm:pb-8 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-xai-black z-[-2]"></div>
       <div className="absolute top-[-50%] left-[-20%] w-[70%] h-[70%] rounded-full bg-xai-blue/10 blur-[120px] z-[-1]"></div>
       <div className="absolute bottom-[-30%] right-[-10%] w-[60%] h-[60%] rounded-full bg-xai-purple/10 blur-[100px] z-[-1]"></div>
@@ -28,14 +28,14 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 
             ref={titleRef} 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 opacity-0"
           >
             Hi, I'm <span className="text-gradient">ANSH THAKUR</span><br />
           </h1>
           
           <p 
             ref={subtitleRef}
-            className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto opacity-0"
+            className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-10 leading-relaxed max-w-3xl mx-auto opacity-0"
           >
             My unmatched perspicacity coupled with my sheer indefatigability makes me a feared opponent in any realm of human endeavour.
           </p>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <HashLink 
               to="#projects"
               smooth
-              className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-base sm:text-lg min-w-[80px] text-center"
+              className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-sm sm:text-base min-w-[80px] text-center"
             >
               Projects
             </HashLink>
@@ -55,7 +55,7 @@ const HeroSection = () => {
               href="https://drive.google.com/file/d/1d3jplTcNsRUSOtlnS8S-k51PGllmqb_v/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-base sm:text-lg min-w-[80px] text-center"
+              className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-sm sm:text-base min-w-[80px] text-center"
             >
               Resume
             </a>

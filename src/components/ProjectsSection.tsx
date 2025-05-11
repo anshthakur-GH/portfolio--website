@@ -31,6 +31,13 @@ const ProjectsSection = () => {
       github: "https://github.com/anshthakur-GH/Project-EchoVerse",
     },
     {
+      title: "Socratix",
+      description: "AI-Powered Socratic Learning Platform that enhances educational experiences through intelligent questioning and adaptive learning.",
+      tags: ["AI", "ML", "NLP"],
+      color: "bg-gradient-to-br from-indigo-600/20 to-violet-600/20 border-indigo-500/30",
+      github: "https://github.com/anshthakur-GH/Socratix",
+    },
+    {
       title: "Outlier AI Dashboard",
       description: "Frontend clone of Outlier AI's homepage with a custom Dashboard for the Level Up Vibe Coding Hackathon 2025.",
       tags: [ "React", "Tailwind CSS", "Chart.js"],
@@ -65,14 +72,7 @@ const ProjectsSection = () => {
       tags: ["E-commerce", "Shopify", "Canva"],
       color: "bg-gradient-to-br from-sky-600/20 to-indigo-600/20 border-sky-500/30",
       link: "https://superiorbasics.com/",
-    },
-    {
-      title: "Chatkhat.com",
-      description: "Developed a Shopify store for a pickles business, focusing on e-commerce and user experience.",
-      tags: [ "E-commerce", "Shopify","Canva"],
-      color: "bg-gradient-to-br from-yellow-600/20 to-orange-600/20 border-yellow-500/30",
-      link: "https://chatkhat.com/",
-    },
+    }
   ];
 
   return (
@@ -88,31 +88,31 @@ const ProjectsSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             {projects.map((project, index) => {
               const useLinkIcon = ["7C SignatureScents.com", "SuperiorBasics.com", "Inspirefy"].includes(project.title);
-              // Determine main URL for the card
               let mainUrl = project.github || project.link || project.youtube || project.instagram || '#';
+              
               return (
                 <a
-                  key={project.title}
+                  key={index}
                   href={mainUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded-2xl p-3 md:p-6 border ${project.color} card-hover group relative overflow-hidden flex flex-col justify-between`}
-                  tabIndex={0}
+                  className={`block relative rounded-2xl overflow-hidden border ${project.color} p-3 sm:p-6 hover:scale-[1.02] transition-all duration-300 card-hover`}
                 >
-                  <div className="absolute inset-px bg-gradient-to-br from-xai-blue/30 to-xai-purple/30 opacity-0 group-hover:opacity-30 transition-opacity z-0"></div>
-                  <div className="relative z-10 flex-1 flex flex-col">
-                    <h3 className="text-xs md:text-xl font-bold mb-2 md:mb-3">{project.title}</h3>
-                    <p className="text-gray-400 text-xs md:text-base mb-2 md:mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-1 md:gap-2 mt-auto mb-2 md:mb-4">
+                  <div className="relative z-10">
+                    <h3 className="text-sm sm:text-xl font-bold mb-2 sm:mb-4">{project.title}</h3>
+                    <p className="text-gray-400 text-xs sm:text-sm mb-4">{project.description}</p>
+                    
+                    <div className="flex flex-wrap gap-1 sm:gap-2 mb-4">
                       {project.tags.map((tag, tagIndex) => (
-                        <span 
+                        <span
                           key={tagIndex}
-                          className="px-2 py-0.5 md:px-3 md:py-1 bg-white/10 rounded-full text-[10px] md:text-xs font-medium"
+                          className="px-2 py-1 text-[10px] sm:text-xs rounded-full bg-white/5 text-gray-300"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
+                    
                     <div className="w-full flex justify-center mt-2 gap-2 md:gap-4">
                       {project.github ? (
                         <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
