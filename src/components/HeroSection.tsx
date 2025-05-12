@@ -52,7 +52,7 @@ const HeroSection = () => {
               Projects
             </HashLink>
             <a 
-              href="https://drive.google.com/file/d/1d3jplTcNsRUSOtlnS8S-k51PGllmqb_v/view?usp=sharing"
+              href="https://drive.google.com/file/d/1FberEV3ky1JYbPoGjGaxu7PHkm5zInyp/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 sm:px-8 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-sm sm:text-base min-w-[80px] text-center"
