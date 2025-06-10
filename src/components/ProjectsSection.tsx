@@ -145,7 +145,7 @@ const ProjectsSection = () => {
                       </div>
                     </div>
                     <div className="mt-auto pt-4 flex justify-center items-end">
-                      {project.title === "Inventory Management System" || project.title === "Lifelance" ? (
+                      {project.title === "Inventory Management System" || project.title === "LifeLane" ? (
                         <div className="flex gap-3">
                           <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
                             <Github className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
