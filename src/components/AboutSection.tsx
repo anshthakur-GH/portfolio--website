@@ -23,7 +23,7 @@ const AboutSection = () => {
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative w-5/6 sm:w-full max-w-[180px] sm:max-w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-xai-blue/20 to-xai-purple/20 p-1">
                 <img 
-                  src="/images/about-me.jpg" 
+                  src="/images/about-me.png" 
                   alt="Ansh at Startup Mahakumbh" 
                   className="absolute inset-0 w-full h-full object-cover rounded-xl"
                 />
