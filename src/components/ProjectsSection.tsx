@@ -10,6 +10,13 @@ const ProjectsSection = () => {
 
   const projects = [
     {
+      title: "Document Automation System",
+      description: "(Won SIH hackathon) System that handles all type of document and make croos communication with required departmetn suinn NLp (NER )model",
+      tags: ["AI", "NLP", "Automation"],
+      color: "bg-gradient-to-br from-purple-600/20 to-indigo-600/20 border-purple-500/30",
+      status: "Completed",
+    },
+    {
       title: "LifeLane",
       description: "IoT device that uses AI to enable private vehicles to act as emergency vehicles during emergencies.",
       tags: ["AI", "IoT"],
@@ -19,44 +26,12 @@ const ProjectsSection = () => {
       status: "Under Work",
     },
     {
-      title: "Pathforge",
-      description: "A platform where students can find all career options, roadmaps, communities, colleges, and much more in one place.",
-      tags: ["TypeScript", "ReactJS", "MongoDB"],
-      color: "bg-gradient-to-br from-yellow-600/20 to-green-600/20 border-yellow-500/30",
-      github: "https://github.com/anshthakur-GH/PathForge",
-      status: "Under Work",
-    },
-    {
       title: "Social Media Automator",
       description: "Automated tool for scheduling and publishing content across multiple social platforms to maximize engagement.",
       tags: ["Automation", "Social Media"],
       color: "bg-gradient-to-br from-blue-600/20 to-cyan-600/20 border-blue-500/30",
       github: "https://github.com/anshthakur-GH/Social-Media-Automator",
       status: "Completed",
-    },
-    {
-      title: "CRUMPTS - Voice Dictation",
-      description: "Advanced voice recognition tool leveraging AI for efficient text transcription and editing.",
-      tags: ["AI","Voice Dictation", "OCR" ],
-      color: "bg-gradient-to-br from-purple-600/20 to-pink-600/20 border-purple-500/30",
-      github: "https://github.com/anshthakur-GH/CRUMPTS-Voice-Dictation",
-      status: "Under Work",
-    },
-    {
-      title: "EchoVerse",
-      description: "AI model designed to recreate human memories through advanced machine learning algorithms.",
-      tags: ["AI", "Machine Learning", "Deep Learning"],
-      color: "bg-gradient-to-br from-emerald-600/20 to-green-600/20 border-emerald-500/30",
-      github: "https://github.com/anshthakur-GH/Project-EchoVerse",
-      status: "Under Work",
-    },
-    {
-      title: "Socratix",
-      description: "AI-Powered Socratic Learning Platform that enhances educational experiences through intelligent questioning and adaptive learning.",
-      tags: ["AI", "ML", "NLP"],
-      color: "bg-gradient-to-br from-indigo-600/20 to-violet-600/20 border-indigo-500/30",
-      github: "https://github.com/anshthakur-GH/Socratix",
-      status: "Under Work",
     },
     {
       title: "Outlier AI Dashboard",
