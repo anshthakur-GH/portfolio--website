@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-card rounded-lg animate-fade-in border border-border">>
+          <div className="md:hidden mt-4 py-4 bg-card rounded-lg animate-fade-in border border-border">
             <div className="flex flex-col space-y-4 px-4">
               {["About", "Skills", "Services", "Projects"].map((item) => (
                 <HashLink
