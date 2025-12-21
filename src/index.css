@@ -1,37 +1,36 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 2%;
-    --foreground: 210 40% 98%;
+    --background: 24 5% 6%;
+    --foreground: 24 10% 95%;
 
-    --card: 0 0% 3%;
-    --card-foreground: 0 0% 98%;
+    --card: 24 5% 10%;
+    --card-foreground: 24 10% 95%;
 
-    --popover: 0 0% 3%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 24 5% 10%;
+    --popover-foreground: 24 10% 95%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 24 100% 50%;
+    --primary-foreground: 24 10% 95%;
 
-    --secondary: 240 5.9% 10%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 24 5% 15%;
+    --secondary-foreground: 24 10% 95%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 24 5% 15%;
+    --muted-foreground: 24 5% 65%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 24 5% 15%;
+    --accent-foreground: 24 10% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 24 10% 95%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 24 5% 20%;
+    --input: 24 5% 20%;
+    --ring: 24 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -41,43 +40,45 @@
   * {
     @apply border-border;
   }
+
   html {
     @apply scroll-smooth;
   }
+
   body {
-    @apply bg-xai-black text-foreground antialiased;
+    @apply bg-background text-foreground antialiased;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-xai-blue to-xai-purple animate-gradient-shift bg-300%;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 animate-gradient-shift bg-300%;
   }
-  
+
   .bg-300\% {
     background-size: 300% 300%;
   }
-  
+
   .text-shadow {
-    text-shadow: 0 2px 10px rgba(0, 153, 255, 0.5);
+    text-shadow: 0 2px 10px rgba(249, 115, 22, 0.5);
   }
-  
+
   .card-hover {
-    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_5px_15px_rgba(0,153,255,0.25)];
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-orange;
   }
-  
+
   .section-padding {
     @apply py-16 md:py-24;
   }
-  
+
   .animation-delay-300 {
     animation-delay: 300ms;
   }
-  
+
   .animation-delay-600 {
     animation-delay: 600ms;
   }
-  
+
   .animation-delay-900 {
     animation-delay: 900ms;
   }

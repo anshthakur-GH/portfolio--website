@@ -35,7 +35,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="section-padding -mt-16 bg-xai-darkgray">
+    <section id="services" className="section-padding -mt-16 bg-secondary">
       <div className="container mx-auto px-8 pb-12">
         <div ref={ref} className={`max-w-6xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
@@ -47,11 +47,11 @@ const ServicesSection = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             {services.map((service, index) => (
-              <div 
+              <div
                 key={index}
-                className="relative bg-xai-black border border-white/10 rounded-2xl p-3 md:p-8 h-full card-hover"
+                className="relative bg-card border border-white/10 rounded-2xl p-3 md:p-8 h-full card-hover"
               >
-                <span className="absolute -top-2 -left-2 bg-gradient-to-r from-xai-blue to-xai-purple text-white text-xs font-bold rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center">
+                <span className="absolute -top-2 -left-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center shadow-[0_0_10px_rgba(249,115,22,0.3)]">
                   {index + 1}
                 </span>
                 <h3 className="text-xs md:text-xl font-bold mb-2 md:mb-4">{service.title}</h3>

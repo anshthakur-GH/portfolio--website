@@ -30,14 +30,14 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         xai: {
-          blue: '#0099ff',
-          darkblue: '#0077cc',
-          purple: '#6e56cf',
-          darkpurple: '#5e46bf',
-          black: '#050505',
-          darkgray: '#111111',
-          gray: '#222222',
-          lightgray: '#888888'
+          blue: '#F97316', // Primary Orange
+          darkblue: '#ea580c',
+          purple: '#ea580c',
+          darkpurple: '#c2410c',
+          black: '#100F0E', // Background
+          darkgray: '#1C1A19', // Card
+          gray: '#292625', // Secondary
+          lightgray: '#F3F2F1' // Foreground
         },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
@@ -78,6 +78,10 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         }
       },
+      fontFamily: {
+        sans: ['"Space Grotesk"', 'sans-serif'],
+        roboto: ['"Roboto"', 'sans-serif'],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
@@ -114,7 +118,10 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-gradient': 'linear-gradient(to right, #0099ff, #6e56cf)',
+        'hero-gradient': 'linear-gradient(to right, #F97316, #ea580c)',
+      },
+      boxShadow: {
+        'orange': '0 5px 15px rgba(249, 115, 22, 0.25)',
       }
     }
   },

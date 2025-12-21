@@ -20,7 +20,7 @@ const Navbar = () => {
       className={cn(
         "fixed w-full z-50 transition-all duration-300",
         scrolled
-          ? "bg-xai-black/80 backdrop-blur-md py-3 shadow-md"
+          ? "bg-background/80 backdrop-blur-md py-3 shadow-md border-b border-border/10"
           : "bg-transparent py-5"
       )}
     >
@@ -30,7 +30,7 @@ const Navbar = () => {
             to="/#"
             className="text-2xl font-bold tracking-tighter text-white"
           >
-            ANSH THAKUR<span className="text-xai-blue"></span>
+            ANSH THAKUR<span className="text-primary">.</span>
           </HashLink>
 
           {/* Desktop Menu */}
@@ -39,14 +39,14 @@ const Navbar = () => {
               <HashLink
                 key={item}
                 to={`/#${item.toLowerCase()}`}
-                className="px-5 py-2 rounded-full bg-xai-black card-hover text-white hover:text-xai-blue transition-colors"
+                className="px-5 py-2 rounded-full bg-secondary card-hover text-foreground hover:text-primary transition-colors"
               >
                 {item}
               </HashLink>
             ))}
             <HashLink
               to="#contact"
-              className="px-5 py-2 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium"
+              className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
             >
               Contact Me
             </HashLink>
@@ -85,13 +85,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-xai-darkgray rounded-lg animate-fade-in">
+          <div className="md:hidden mt-4 py-4 bg-card rounded-lg animate-fade-in border border-border">>
             <div className="flex flex-col space-y-4 px-4">
               {["About", "Skills", "Services", "Projects"].map((item) => (
                 <HashLink
                   key={item}
                   to={`/#${item.toLowerCase()}`}
-                  className="text-white hover:text-xai-blue transition-colors text-center"
+                  className="text-foreground hover:text-primary transition-colors text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item}
@@ -99,7 +99,7 @@ const Navbar = () => {
               ))}
               <HashLink
                 to="#contact"
-                className="px-4 py-2 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple text-white font-medium text-center"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Me

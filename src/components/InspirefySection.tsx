@@ -9,19 +9,19 @@ const InspirefySection = () => {
   });
 
   return (
-    <section className="section-padding -mt-24 bg-gradient-to-br from-xai-darkgray/80 to-xai-gray/50">
+    <section className="section-padding -mt-24 bg-gradient-to-br from-secondary/80 to-card/50">
       <div className="container mx-auto px-4 sm:px-8 pb-8 sm:pb-12">
         <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-8 sm:mb-16">
           Social Media Page - Inspirefy
         </h2>
-        
-        <div 
-          ref={ref} 
+
+        <div
+          ref={ref}
           className={`max-w-5xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}
         >
-          <div className="relative bg-xai-black border border-white/10 rounded-2xl p-4 sm:p-8 md:p-16">
+          <div className="relative bg-card border border-white/10 rounded-2xl p-4 sm:p-8 md:p-16">
             <div className="flex flex-row justify-center items-center space-x-8 sm:space-x-16 mb-6 sm:mb-8">
-              <a 
+              <a
                 href="https://www.youtube.com/channel/UCmpLoVe7Nc_uyQn5-CZNKMg"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,7 +31,7 @@ const InspirefySection = () => {
                   <Youtube className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </a>
-              <a 
+              <a
                 href="https://www.instagram.com/inspirefy_daily"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const InspirefySection = () => {
                   <Instagram className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </a>
-              <a 
+              <a
                 href="https://x.com/inspirefy_daily"
                 target="_blank"
                 rel="noopener noreferrer"

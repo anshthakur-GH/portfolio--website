@@ -36,7 +36,7 @@ const ProjectsSection = () => {
     {
       title: "Outlier AI Dashboard",
       description: "Frontend clone of Outlier AI's homepage with a custom Dashboard for the Level Up Vibe Coding Hackathon 2025.",
-      tags: [ "React", "Tailwind CSS", "Chart.js"],
+      tags: ["React", "Tailwind CSS", "Chart.js"],
       color: "bg-gradient-to-br from-fuchsia-600/20 to-blue-600/20 border-fuchsia-500/30",
       github: "https://github.com/anshthakur-GH/OutlierAi--Dashboard",
       status: "Completed",
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding -mt-16 bg-xai-black">
+    <section id="projects" className="section-padding -mt-16 bg-background">
       <div className="container mx-auto px-8 pb-12">
         <div ref={ref} className={`max-w-6xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-16">
@@ -91,7 +91,7 @@ const ProjectsSection = () => {
             {projects.map((project, index) => {
               const useLinkIcon = ["7C SignatureScents.com", "SuperiorBasics.com", "Inspirefy"].includes(project.title);
               let mainUrl = project.github || project.link || project.youtube || project.instagram || '#';
-              
+
               return (
                 <a
                   key={index}
@@ -126,7 +126,7 @@ const ProjectsSection = () => {
                             <Github className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-white transition-colors" />
                           </a>
                           <a href={project.link} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} tabIndex={-1}>
-                            <LinkIcon className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-xai-blue transition-colors" />
+                            <LinkIcon className="w-5 h-5 md:w-7 md:h-7 text-gray-400 hover:text-primary transition-colors" />
                           </a>
                         </div>
                       ) : project.github ? (

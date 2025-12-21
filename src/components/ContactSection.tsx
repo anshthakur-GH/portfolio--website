@@ -8,20 +8,20 @@ const ContactSection = () => {
     triggerOnce: true,
     threshold: 0.2,
   });
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
-  
+
   const [status, setStatus] = useState({
     submitting: false,
     success: false,
     error: false,
     message: ''
   });
-  
+
   const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -43,7 +43,7 @@ const ContactSection = () => {
     setStatus({ submitting: true, success: false, error: false, message: '' });
 
     const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeoEq2WD0FwZKGEhGau1nk7uTYQlxnpzQwLL6CLIdMYLEfdCA/formResponse';
-    
+
     const formDataToSubmit = new FormData();
     formDataToSubmit.append('entry.2094880993', formData.name);
     formDataToSubmit.append('entry.727444548', formData.email);
@@ -62,7 +62,7 @@ const ContactSection = () => {
         error: false,
         message: 'Message sent successfully!'
       });
-      
+
       // Reset form
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
@@ -76,7 +76,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding -mt-16 bg-xai-darkgray">
+    <section id="contact" className="section-padding -mt-16 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 pb-8 sm:pb-12">
         <div ref={ref} className={`max-w-5xl mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-8 sm:mb-16">
@@ -88,59 +88,59 @@ const ContactSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-10">
             <div className="lg:col-span-2">
-              <div className="h-full p-4 sm:p-6 lg:p-8 bg-xai-black rounded-2xl border border-white/10">
+              <div className="h-full p-4 sm:p-6 lg:p-8 bg-card rounded-2xl border border-white/10">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-xai-blue/20 flex items-center justify-center mr-3 sm:mr-4">
-                    <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-xai-blue" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center mr-3 sm:mr-4">
+                    <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold">Drop a Message</h3>
                 </div>
-                
+
                 <p className="text-gray-400 mb-6 text-sm sm:text-base">
-                  Looking to collaborate or have questions about my services? Send me a message 
+                  Looking to collaborate or have questions about my services? Send me a message
                   and I'll respond as soon as possible.
                 </p>
-                
+
                 <div className="border-t border-white/10 pt-4 sm:pt-6">
                   <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Connect with me</h4>
                   <div className="space-y-2 mb-4">
-                    <a href="mailto:mailtoanshthakur@gmail.com" className="block text-gray-400 hover:text-xai-blue transition-colors text-sm sm:text-base">
+                    <a href="mailto:mailtoanshthakur@gmail.com" className="block text-gray-400 hover:text-primary transition-colors text-sm sm:text-base">
                       mailtoanshthakur@gmail.com
                     </a>
-                    <a href="mailto:inspirefybusiness@gmail.com" className="block text-gray-400 hover:text-xai-blue transition-colors text-sm sm:text-base">
+                    <a href="mailto:inspirefybusiness@gmail.com" className="block text-gray-400 hover:text-primary transition-colors text-sm sm:text-base">
                       inspirefybusiness@gmail.com
                     </a>
                   </div>
                   <div className="flex space-x-3 sm:space-x-4">
-                    <a 
-                      href="https://x.com/anshthakur_x" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-xai-blue/20 transition-colors"
+                    <a
+                      href="https://x.com/anshthakur_x"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <XIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
-                    <a 
-                      href="https://www.instagram.com/anshthakur_ig/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-xai-blue/20 transition-colors"
+                    <a
+                      href="https://www.instagram.com/anshthakur_ig/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
-                    <a 
-                      href="https://github.com/anshthakur-GH" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-xai-blue/20 transition-colors"
+                    <a
+                      href="https://github.com/anshthakur-GH"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
-                    <a 
-                      href="https://www.linkedin.com/in/ansh-singh-431425299/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-xai-blue/20 transition-colors"
+                    <a
+                      href="https://www.linkedin.com/in/ansh-singh-431425299/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
@@ -148,7 +148,7 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="lg:col-span-3">
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
@@ -162,7 +162,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-xai-black border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-xai-blue transition-colors text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-card border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors text-sm sm:text-base"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -178,7 +178,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-xai-black border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-xai-blue transition-colors text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-card border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors text-sm sm:text-base"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -194,7 +194,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-xai-black border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-xai-blue transition-colors resize-none text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-card border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors resize-none text-sm sm:text-base"
                     placeholder="Enter your message"
                   />
                 </div>
@@ -203,7 +203,7 @@ const ContactSection = () => {
                   <button
                     type="submit"
                     disabled={status.submitting}
-                    className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 rounded-full bg-gradient-to-r from-xai-blue to-xai-purple hover:opacity-90 transition-opacity text-white font-medium text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_15px_rgba(249,115,22,0.3)]"
                   >
                     {status.submitting ? 'Sending...' : 'Send Message'}
                   </button>

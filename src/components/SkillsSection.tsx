@@ -21,7 +21,7 @@ const SkillsSection = () => {
     },
     {
       title: "AI Driven Development",
-      icon: <span className="inline-block font-bold text-xai-blue text-lg">AI</span>,
+      icon: <span className="inline-block font-bold text-primary text-lg">AI</span>,
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -32,7 +32,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding -mt-16 bg-xai-black">
+    <section id="skills" className="section-padding -mt-16 bg-background">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 py-10 overflow-hidden">
         <div ref={ref} className={`w-full mx-auto ${inView ? 'animate-slide-up' : 'opacity-0'}`}>
           <div className="text-center mb-12 sm:mb-16">
@@ -46,19 +46,19 @@ const SkillsSection = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-48 h-24 relative border border-white/10 rounded-xl overflow-hidden bg-xai-darkgray p-4 hover:border-white/30 transition-all card-hover flex flex-col items-center justify-center"
+                className="flex-shrink-0 w-48 h-24 relative border border-white/10 rounded-xl overflow-hidden bg-card p-4 hover:border-white/30 transition-all card-hover flex flex-col items-center justify-center"
               >
                 <div className={`absolute -bottom-2 -right-2 w-12 h-12 sm:w-24 sm:h-24 bg-gradient-to-br ${skill.color} rounded-full opacity-10 blur-lg`}></div>
                 <div className="relative z-10 w-full">
                   <div className="flex flex-col items-center space-y-2">
-                    <div className="text-xai-blue">{React.cloneElement(skill.icon, { className: 'h-5 w-5' })}</div>
+                    <div className="text-primary">{React.cloneElement(skill.icon, { className: 'h-5 w-5' })}</div>
                     <h3 className="text-xs sm:text-sm font-medium text-center">{skill.title}</h3>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <style jsx>{`
+          <style>{`
             .hide-scrollbar::-webkit-scrollbar {
               height: 6px;
             }
