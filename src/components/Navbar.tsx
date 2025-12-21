@@ -44,6 +44,14 @@ const Navbar = () => {
                 {item}
               </HashLink>
             ))}
+            <a
+              href="https://unfazed-ai.online/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
+            >
+              My Agency
+            </a>
             <HashLink
               to="#contact"
               className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
@@ -97,6 +105,15 @@ const Navbar = () => {
                   {item}
                 </HashLink>
               ))}
+              <a
+                href="https://unfazed-ai.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                My Agency
+              </a>
               <HashLink
                 to="#contact"
                 className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center"
