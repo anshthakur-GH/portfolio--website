@@ -43,7 +43,7 @@ const AboutSection = () => {
                   <p className="text-gray-400 text-xs sm:text-sm">Years Experience</p>
                 </div>
                 <div className="border border-white/10 rounded-lg p-2 sm:p-4 md:p-6 bg-card card-hover">
-                  <h3 className="font-bold text-lg sm:text-2xl md:text-3xl text-gradient mb-1">20+</h3>
+                  <h3 className="font-bold text-lg sm:text-2xl md:text-3xl text-gradient mb-1">30+</h3>
                   <p className="text-gray-400 text-xs sm:text-sm">Projects Completed</p>
                 </div>
               </div>

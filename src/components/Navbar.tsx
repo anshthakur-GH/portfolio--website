@@ -28,18 +28,18 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <HashLink
             to="/#"
-            className="text-2xl font-bold tracking-tighter text-white"
+            className="text-xl sm:text-2xl font-bold tracking-tighter text-white"
           >
             ANSH THAKUR<span className="text-primary">.</span>
           </HashLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {["About", "Skills", "Services", "Projects"].map((item) => (
               <HashLink
                 key={item}
                 to={`/#${item.toLowerCase()}`}
-                className="px-5 py-2 rounded-full bg-secondary card-hover text-foreground hover:text-primary transition-colors"
+                className="px-3 py-2 lg:px-5 lg:py-2 text-sm lg:text-base rounded-full bg-secondary card-hover text-foreground hover:text-primary transition-colors"
               >
                 {item}
               </HashLink>
@@ -48,13 +48,13 @@ const Navbar = () => {
               href="https://unfazed-ai.online/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
+              className="px-3 py-2 lg:px-5 lg:py-2 text-sm lg:text-base rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
             >
               My Agency
             </a>
             <HashLink
               to="#contact"
-              className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
+              className="px-3 py-2 lg:px-5 lg:py-2 text-sm lg:text-base rounded-full bg-gradient-to-r from-orange-400 to-orange-600 hover:opacity-90 transition-opacity text-white font-medium shadow-[0_0_15px_rgba(249,115,22,0.3)]"
             >
               Contact Me
             </HashLink>
@@ -93,8 +93,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-card rounded-lg animate-fade-in border border-border">
-            <div className="flex flex-col space-y-4 px-4">
+          <div className="md:hidden mt-2 py-3 bg-card rounded-lg animate-fade-in border border-border">
+            <div className="flex flex-col space-y-2 px-3">
               {["About", "Skills", "Services", "Projects"].map((item) => (
                 <HashLink
                   key={item}
@@ -109,14 +109,14 @@ const Navbar = () => {
                 href="https://unfazed-ai.online/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center"
+                className="px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center text-sm"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 My Agency
               </a>
               <HashLink
                 to="#contact"
-                className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center"
+                className="px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium text-center text-sm"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Me
